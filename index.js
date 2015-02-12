@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
 	grantEntry()
 })
@@ -16,7 +17,15 @@ function grantEntry(){
 function displayMainPage(){
 
 	function showElements(){
-		$('#main').css('display', 'block')
+		$('#message').slideDown(1000)
+		timeoutID2 = window.setTimeout(showSection, 1000);
+		
+	}
+	function showSection(){
+		$('#one').show().addClass('animated slideInLeft')
+		$('#two').show().addClass('animated slideInRight')
+		$('#three').show().addClass('animated slideInLeft')
+		$('#four').show().addClass('animated slideInRight')
 	}
 
 	timeoutID = window.setTimeout(showElements, 2000);

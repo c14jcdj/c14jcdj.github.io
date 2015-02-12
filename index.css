@@ -124,7 +124,6 @@
 }
 
 #main {
-	display: none;
 	position: absolute;
 	left: 0;
 	right: 0;
@@ -142,6 +141,7 @@
 	
 }
 #message {
+	display: none;
 	color: white;
 	font-size: 1.3em;
 	padding: 30px;
@@ -161,17 +161,21 @@ section {
 }
 
 #one {
+	display: none;
 	float: left;
 }
 #two {
+	display: none;
 	float: right;
 }
 
 #three {
+	display: none;
 	float: left;
 }
 
 #four {
+	display: none;
 	float: right;
 }
 
