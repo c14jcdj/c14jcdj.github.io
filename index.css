@@ -109,12 +109,102 @@
 	text-decoration: none;
 }
 
-#main {
+#main_background {
 	position: absolute;
 	top: 0;
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: red;
+	background-image: url('programming.jpg');
+	background-size: cover;
+	background-position: center;
 	display: none;
 }
+
+#main {
+	display: none;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top:0;
+}
+
+#overlay {
+	position: absolute;
+	left: 0;
+	right:0;
+	top:0;
+	bottom: 0;
+	background-color: rgba(0,102,204,0.5);
+	
+}
+#message {
+	color: white;
+	font-size: 1.3em;
+	padding: 30px;
+	text-align: center;
+	text-shadow:  
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+}
+
+section {
+	width: 50%;
+	position: relative;
+	height: 275px;
+
+}
+
+#one {
+	float: left;
+}
+#two {
+	float: right;
+}
+
+#three {
+	float: left;
+}
+
+#four {
+	float: right;
+}
+
+#one div {
+	background-image: url('pic1.jpg');
+	background-size: cover;
+	background-position: center;
+	width: 80%;
+	height: 250px;
+	margin: 0 auto;
+	border: 5px solid #fff;
+}
+#two div {
+	background-image: url('pic2.jpg');
+	background-size: cover;
+	background-position: center;
+	width: 80%;
+	height: 250px;
+	margin: 0 auto;
+	border: 5px solid #fff;
+}#three div {
+	background-image: url('pic3.jpg');
+	background-size: cover;
+	background-position: center;
+	width: 80%;
+	height: 250px;
+	margin: 0 auto;
+	border: 5px solid #fff;
+}#four div {
+	background-image: url('pic4.jpg');
+	background-size: cover;
+	background-position: center;
+	width: 80%;
+	height: 250px;
+	margin: 0 auto;
+	border: 5px solid #fff;
+}
+
