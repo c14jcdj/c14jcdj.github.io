@@ -1,7 +1,19 @@
 
-// $(document).ready(function(){
-// 	grantEntry()
-// })
+$(document).ready(function(){
+	console.log('yo')
+	// Activate Carousel
+	$("#myCarousel").carousel();
+
+	// Enable Carousel Indicators
+	$(".item").click(function(){
+		$("#myCarousel").carousel(1);
+	});
+
+	// Enable Carousel Controls
+	$(".left").click(function(){
+		$("#myCarousel").carousel("prev");
+	});
+})
 
 // function grantEntry(){
 // 	var ssPassword = 'i'
@@ -30,4 +42,3 @@
 
 // 	timeoutID = window.setTimeout(showElements, 2000);
 // }
-alert('yo')
