@@ -1,18 +1,30 @@
 
 $(document).ready(function(){
-	console.log('yo')
 	// Activate Carousel
 	$("#myCarousel").carousel();
 
-	// Enable Carousel Indicators
-	$(".item").click(function(){
-		$("#myCarousel").carousel(1);
-	});
+	checkitem()
 
 	// Enable Carousel Controls
 	$(".left").click(function(){
 		$("#myCarousel").carousel("prev");
 	});
+
+	$('#myCarousel').on('slid.bs.carousel', checkitem);
+
+	function checkitem()                        // check function
+	{
+			var $this = $('#myCarousel');
+			if($('.carousel-inner .item:first').hasClass('active')) {
+					$this.children('.left.carousel-control').hide();
+					$this.children('.right.carousel-control').show();
+			} else if($('.carousel-inner .item:last').hasClass('active')) {
+					$this.children('.left.carousel-control').show();
+					$this.children('.right.carousel-control').hide();
+			} else {
+					$this.children('.carousel-control').show();
+			} 
+	}
 })
 
 // function grantEntry(){
